@@ -1,0 +1,252 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    color: gray;
+    background-color: rgb(24, 24, 24);
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.page_wrapper{
+    display: grid;
+    flex-direction: column;
+    grid-template-rows: repeat(12, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+.navbar_wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 10vh;
+}
+.navbar {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: repeat(12, 1fr);
+    flex-direction: row;
+    align-items: center;
+}
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 100%;
+    width: 100%;
+}
+.nav_links a{
+    display: flex;
+    text-decoration: none;
+    color: gray;
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    justify-content: center;
+}
+.nav_links ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.nav_links ul:hover{
+    background-color: gray;
+    color: white;
+}
+.nav_links ul a:hover {
+    background-color: gray;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+.search_bar {
+    grid-column-start: 10;
+}
+.search_bar[type=text]:focus{
+    transition: .5s;
+    border: 2px solid white;
+}
+.search_bar[type=text] {
+    background-color: rgb(97, 97, 97);
+    border: lightgray;
+    border-radius: 2.5%;
+}
+
+.contact_us {
+    grid-column-start: 12;
+}
+.contact_us a {
+    text-decoration: none;
+    color: gray;
+}
+.nav_sign_in {
+    grid-column-start: 8;
+}
+.nav_sign_out {
+    grid-column-start: 9;
+}
+.nav_sign_in a {
+    text-decoration: none;
+    color: gray;
+}
+.nav_sign_up a {
+    text-decoration: none;
+    color: gray;
+}
+.banner_wrapper a{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-start: 5;
+    grid-row-end: 7;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    grid-template-columns: repeat(12, 1fr);
+}
+.banner_wrapper {
+
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.banner_wrapper a {
+    text-decoration: none;    
+}
+.banner_logo {
+    display: flex;
+    flex-direction: row;
+    grid-column-start: 4;
+    grid-column-end: 9;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+
+}
+
+.auth_wrapper {
+    grid-row-start: 7;
+    grid-row-end: 11;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    height: 70%;
+    font-size: 200%;
+    background-color: rgb(24, 24, 24);
+    grid-gap: 2px;
+}
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    height: 93%;
+    font-weight: 800;
+    border: inherit;
+    grid-gap: 1%;
+
+}
+.sign_in {
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    border: inherit;
+    border: 2px solid gray;
+    border-radius: 2.5%;
+    
+    
+}
+.sign_in:hover {
+    background-color: gray;
+    transition: .5s;
+    border: 2px solid white;
+}
+.sign_in button:hover{
+    background-color: gray;
+    transition: .5s;
+    border: 2px solid white;
+    color: white;
+}
+.sign_in button {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    font-weight: 600;
+    border: inherit;
+    color: gray;
+    font-size: 1em;
+}
+.sign_up {
+    height: 100%;
+    width: 50%;
+    border: 2px solid gray;
+    border-radius: 2.5%;
+    font-weight: 800;
+}
+.sign_up:hover {
+    background-color: gray;
+    transition: .5s;
+    border: 2px solid white;
+}
+.sign_up button {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    font-weight: 800;
+    border: inherit;
+    color: gray;
+    font-size: 1em;
+
+}
+.sign_up button:hover {
+    background-color: gray;
+    transition: .5s;
+    border: 2px solid white;
+    color: white;
+}
+.guest {
+    display: flex;
+    grid-row-start: 2;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    justify-content: center;
+    align-items: center;
+    height: 93%;
+    border: 2px solid gray;
+    margin-top: 2px;
+    border-radius: 2.5%;
+}
+.guest:hover{
+    background-color: gray;
+    transition: .5s;
+    border: 2px solid white;
+
+}
+.guest button:hover {
+    background-color: gray;
+    transition: .5s;
+    border: 2px solid white;
+    color: white;
+}
+.guest button {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    font-weight: lighter; 
+    font-weight: 800;
+    border: inherit;
+    color: gray;
+    font-size: 1em;
+}
+
